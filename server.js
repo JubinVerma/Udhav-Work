@@ -17,6 +17,7 @@ const multer = require("multer");
 const cloudinary = require("cloudinary").v2;
 const streamifier = require("streamifier");
 const app = express();
+require('pg');
 const PORT = process.env.PORT || 3000;
 
 app.set("view engine", "ejs");
