@@ -116,7 +116,7 @@ app.use((req, res) => {
 
 storeService.initialize()
     .then(() => {
-        console.log(`Server is running at: http://localhost:${PORT}`);
+        app.listen(PORT, () => console.log(`🚀 Server is running at: http://localhost:${PORT}`));
     })
     .catch((err) => {
         console.error(` Failed to start server: ${err}`);

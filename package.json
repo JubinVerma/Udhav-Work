@@ -8,10 +8,9 @@
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js --watch"
+    "start": "node server.js"
   },
   "dependencies": {
-    "all": "^0.0.0",
     "cloudinary": "^2.5.1",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",

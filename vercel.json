@@ -1,16 +1,23 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "server.js",
-        "use": "@vercel/node",
-        "config": { "includeFiles": ["dist/**"] }
+  "version": 2,
+  "builds": [
+    {
+      "src": "server.js",
+      "use": "@vercel/node",
+      "config": {
+        "includeFiles": ["data/**", "public/**", "views/**"]
       }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "server.js"
-      }
-    ]
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "server.js"
+    }
+  ],
+  "env": {
+    "CLOUD_NAME": "dyyzagmuc",
+    "API_KEY": "441372213276168",
+    "API_SECRET": "swlAZWgZuq4sMTXHBm3g8gbMbkM"
   }
+}

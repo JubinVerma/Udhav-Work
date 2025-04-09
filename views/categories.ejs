@@ -1,0 +1,19 @@
+<%- include("partials/header", { title: "Categories", active: "categories" }) %>
+
+<h1 class="text-center">Item Categories</h1>
+
+<div class="categories-container">
+    <% if (categories.length > 0) { %>
+        <ul>
+            <% categories.forEach(category => { %>
+                <li class="item-card">
+                    <h2><a href="/items?category=<%= category.id %>"><%= category.category %></a></h2>
+                </li>
+            <% }); %>
+        </ul>
+    <% } else { %>
+        <p class="text-center">No categories available.</p>
+    <% } %>
+</div>
+
+<%- include("partials/footer") %>
