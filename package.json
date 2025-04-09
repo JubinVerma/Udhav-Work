@@ -4,7 +4,7 @@
   "description": "WEB322 Assignment 4",
   "keywords": [],
   "license": "ISC",
-  "author": "Udhav tamyal",
+  "author": "Udhav Tamyal",
   "type": "commonjs",
   "main": "server.js",
   "scripts": {
